@@ -1,0 +1,104 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Rust (Debug)",
+			"request": "launch",
+			"preLaunchTask": "Rust Linux Debug Build",
+			"program": "/home/maik/Documents/Unreal Projects/Rust/Binaries/Linux/Rust-Linux-Debug",
+			"args": [
+			],
+			"cwd": "/home/maik/projects/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "Rust (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "Rust Linux DebugGame Build",
+			"program": "/home/maik/Documents/Unreal Projects/Rust/Binaries/Linux/Rust-Linux-DebugGame",
+			"args": [
+			],
+			"cwd": "/home/maik/projects/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "Rust (Development)",
+			"request": "launch",
+			"preLaunchTask": "Rust Linux Development Build",
+			"program": "/home/maik/Documents/Unreal Projects/Rust/Binaries/Linux/Rust",
+			"args": [
+			],
+			"cwd": "/home/maik/projects/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "Rust (Shipping)",
+			"request": "launch",
+			"preLaunchTask": "Rust Linux Shipping Build",
+			"program": "/home/maik/Documents/Unreal Projects/Rust/Binaries/Linux/Rust-Linux-Shipping",
+			"args": [
+			],
+			"cwd": "/home/maik/projects/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "Rust (Test)",
+			"request": "launch",
+			"preLaunchTask": "Rust Linux Test Build",
+			"program": "/home/maik/Documents/Unreal Projects/Rust/Binaries/Linux/Rust-Linux-Test",
+			"args": [
+			],
+			"cwd": "/home/maik/projects/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "RustEditor (Debug)",
+			"request": "launch",
+			"preLaunchTask": "RustEditor Linux Debug Build",
+			"program": "/home/maik/projects/UnrealEngine/Engine/Binaries/Linux/UE4Editor-Linux-Debug",
+			"args": [
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject"
+			],
+			"cwd": "/home/maik/projects/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "RustEditor (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "RustEditor Linux DebugGame Build",
+			"program": "/home/maik/projects/UnrealEngine/Engine/Binaries/Linux/UE4Editor-Linux-DebugGame",
+			"args": [
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject"
+			],
+			"cwd": "/home/maik/projects/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "RustEditor (Development)",
+			"request": "launch",
+			"preLaunchTask": "RustEditor Linux Development Build",
+			"program": "/home/maik/projects/UnrealEngine/Engine/Binaries/Linux/UE4Editor",
+			"args": [
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject"
+			],
+			"cwd": "/home/maik/projects/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "Generate Project Files",
+			"type": "mono",
+			"request": "launch",
+			"program": "/home/maik/projects/UnrealEngine/Engine/Binaries/DotNET/UnrealBuildTool.exe",
+			"console": "internalConsole",
+			"args": [
+				"-projectfiles",
+				"-vscode",
+				"-project=\"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject\"",
+				"-game",
+				"-engine"
+			],
+			"internalConsoleOptions": "openOnSessionStart",
+			"cwd": "/home/maik/projects/UnrealEngine"
+		}
+	]
+}

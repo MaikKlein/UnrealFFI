@@ -1,0 +1,1985 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Rust Mac Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"Mac",
+				"Debug",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "Rust Mac Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"Mac",
+				"Debug",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Rust Mac Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "Rust Mac Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"Mac",
+				"Debug",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "Rust Mac DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"Mac",
+				"DebugGame",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "Rust Mac DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"Mac",
+				"DebugGame",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Rust Mac DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "Rust Mac DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"Mac",
+				"DebugGame",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "Rust Mac Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"Mac",
+				"Development",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "Rust Mac Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"Mac",
+				"Development",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Rust Mac Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "Rust Mac Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"Mac",
+				"Development",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "Rust Mac Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"Mac",
+				"Shipping",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "Rust Mac Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"Mac",
+				"Shipping",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Rust Mac Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "Rust Mac Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"Mac",
+				"Shipping",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "Rust Mac Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"Mac",
+				"Test",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "Rust Mac Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"Mac",
+				"Test",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Rust Mac Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "Rust Mac Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"Mac",
+				"Test",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "Rust IOS Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"IOS",
+				"Debug",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "Rust IOS Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"IOS",
+				"Debug",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Rust IOS Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "Rust IOS Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"IOS",
+				"Debug",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "Rust IOS DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"IOS",
+				"DebugGame",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "Rust IOS DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"IOS",
+				"DebugGame",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Rust IOS DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "Rust IOS DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"IOS",
+				"DebugGame",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "Rust IOS Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"IOS",
+				"Development",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "Rust IOS Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"IOS",
+				"Development",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Rust IOS Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "Rust IOS Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"IOS",
+				"Development",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "Rust IOS Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"IOS",
+				"Shipping",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "Rust IOS Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"IOS",
+				"Shipping",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Rust IOS Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "Rust IOS Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"IOS",
+				"Shipping",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "Rust IOS Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"IOS",
+				"Test",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "Rust IOS Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"IOS",
+				"Test",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Rust IOS Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "Rust IOS Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"IOS",
+				"Test",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "Rust Linux Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"Linux",
+				"Debug",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "Rust Linux Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"Linux",
+				"Debug",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Rust Linux Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "Rust Linux Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"Linux",
+				"Debug",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "Rust Linux DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"Linux",
+				"DebugGame",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "Rust Linux DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"Linux",
+				"DebugGame",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Rust Linux DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "Rust Linux DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"Linux",
+				"DebugGame",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "Rust Linux Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"Linux",
+				"Development",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "Rust Linux Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"Linux",
+				"Development",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Rust Linux Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "Rust Linux Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"Linux",
+				"Development",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "Rust Linux Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"Linux",
+				"Shipping",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "Rust Linux Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"Linux",
+				"Shipping",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Rust Linux Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "Rust Linux Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"Linux",
+				"Shipping",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "Rust Linux Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"Linux",
+				"Test",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "Rust Linux Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"Linux",
+				"Test",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Rust Linux Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "Rust Linux Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"Linux",
+				"Test",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "Rust LinuxAArch64 Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"LinuxAArch64",
+				"Debug",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "Rust LinuxAArch64 Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"LinuxAArch64",
+				"Debug",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Rust LinuxAArch64 Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "Rust LinuxAArch64 Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"LinuxAArch64",
+				"Debug",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "Rust LinuxAArch64 DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"LinuxAArch64",
+				"DebugGame",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "Rust LinuxAArch64 DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"LinuxAArch64",
+				"DebugGame",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Rust LinuxAArch64 DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "Rust LinuxAArch64 DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"LinuxAArch64",
+				"DebugGame",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "Rust LinuxAArch64 Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"LinuxAArch64",
+				"Development",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "Rust LinuxAArch64 Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"LinuxAArch64",
+				"Development",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Rust LinuxAArch64 Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "Rust LinuxAArch64 Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"LinuxAArch64",
+				"Development",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "Rust LinuxAArch64 Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"LinuxAArch64",
+				"Shipping",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "Rust LinuxAArch64 Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"LinuxAArch64",
+				"Shipping",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Rust LinuxAArch64 Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "Rust LinuxAArch64 Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"LinuxAArch64",
+				"Shipping",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "Rust LinuxAArch64 Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"LinuxAArch64",
+				"Test",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "Rust LinuxAArch64 Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"LinuxAArch64",
+				"Test",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Rust LinuxAArch64 Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "Rust LinuxAArch64 Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"LinuxAArch64",
+				"Test",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "Rust TVOS Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"TVOS",
+				"Debug",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "Rust TVOS Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"TVOS",
+				"Debug",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Rust TVOS Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "Rust TVOS Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"TVOS",
+				"Debug",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "Rust TVOS DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"TVOS",
+				"DebugGame",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "Rust TVOS DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"TVOS",
+				"DebugGame",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Rust TVOS DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "Rust TVOS DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"TVOS",
+				"DebugGame",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "Rust TVOS Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"TVOS",
+				"Development",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "Rust TVOS Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"TVOS",
+				"Development",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Rust TVOS Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "Rust TVOS Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"TVOS",
+				"Development",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "Rust TVOS Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"TVOS",
+				"Shipping",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "Rust TVOS Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"TVOS",
+				"Shipping",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Rust TVOS Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "Rust TVOS Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"TVOS",
+				"Shipping",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "Rust TVOS Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"TVOS",
+				"Test",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "Rust TVOS Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"TVOS",
+				"Test",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Rust TVOS Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "Rust TVOS Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"TVOS",
+				"Test",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "Rust XXX Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"XXX",
+				"Debug",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "Rust XXX Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"XXX",
+				"Debug",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Rust XXX Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "Rust XXX Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"XXX",
+				"Debug",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "Rust XXX DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"XXX",
+				"DebugGame",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "Rust XXX DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"XXX",
+				"DebugGame",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Rust XXX DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "Rust XXX DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"XXX",
+				"DebugGame",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "Rust XXX Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"XXX",
+				"Development",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "Rust XXX Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"XXX",
+				"Development",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Rust XXX Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "Rust XXX Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"XXX",
+				"Development",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "Rust XXX Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"XXX",
+				"Shipping",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "Rust XXX Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"XXX",
+				"Shipping",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Rust XXX Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "Rust XXX Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"XXX",
+				"Shipping",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "Rust XXX Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"XXX",
+				"Test",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "Rust XXX Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"XXX",
+				"Test",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Rust XXX Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "Rust XXX Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Rust",
+				"XXX",
+				"Test",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "RustEditor Linux Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"RustEditor",
+				"Linux",
+				"Debug",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "RustEditor Linux Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"RustEditor",
+				"Linux",
+				"Debug",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"RustEditor Linux Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "RustEditor Linux Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"RustEditor",
+				"Linux",
+				"Debug",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "RustEditor Linux DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"RustEditor",
+				"Linux",
+				"DebugGame",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "RustEditor Linux DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"RustEditor",
+				"Linux",
+				"DebugGame",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"RustEditor Linux DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "RustEditor Linux DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"RustEditor",
+				"Linux",
+				"DebugGame",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "RustEditor Linux Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"RustEditor",
+				"Linux",
+				"Development",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "RustEditor Linux Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"RustEditor",
+				"Linux",
+				"Development",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"RustEditor Linux Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "RustEditor Linux Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"RustEditor",
+				"Linux",
+				"Development",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "RustEditor Mac Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"RustEditor",
+				"Mac",
+				"Debug",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "RustEditor Mac Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"RustEditor",
+				"Mac",
+				"Debug",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"RustEditor Mac Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "RustEditor Mac Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"RustEditor",
+				"Mac",
+				"Debug",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "RustEditor Mac DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"RustEditor",
+				"Mac",
+				"DebugGame",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "RustEditor Mac DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"RustEditor",
+				"Mac",
+				"DebugGame",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"RustEditor Mac DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "RustEditor Mac DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"RustEditor",
+				"Mac",
+				"DebugGame",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "RustEditor Mac Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"RustEditor",
+				"Mac",
+				"Development",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "RustEditor Mac Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"RustEditor",
+				"Mac",
+				"Development",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"RustEditor Mac Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		},
+		{
+			"label": "RustEditor Mac Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"RustEditor",
+				"Mac",
+				"Development",
+				"/home/maik/Documents/Unreal Projects/Rust/Rust.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/maik/projects/UnrealEngine"
+			}
+		}
+	]
+}

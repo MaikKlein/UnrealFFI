@@ -1,0 +1,13 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "{0004EB94-08D7-88BE-521D-06CC7CF96F37}",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "Rust",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	]
+}

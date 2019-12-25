@@ -1,0 +1,7 @@
+{
+	"files.exclude": {
+		"/home/maik/Documents/Unreal Projects/Rust/.vscode": true,
+		"/home/maik/Documents/Unreal Projects/Rust/Content": true,
+		"/home/maik/Documents/Unreal Projects/Rust/Intermediate": true
+	}
+}
